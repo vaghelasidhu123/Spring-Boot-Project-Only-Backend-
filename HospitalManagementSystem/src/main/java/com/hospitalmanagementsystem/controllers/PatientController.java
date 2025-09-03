@@ -41,7 +41,7 @@ public class PatientController {
 
     @PutMapping("/{id}")
     public void updatePatient(@PathVariable Long id, Patient updatePatient){
-          patientService.updateParient(id, updatePatient);
+          patientService.updatePatient(id, updatePatient);
     }
 
 }

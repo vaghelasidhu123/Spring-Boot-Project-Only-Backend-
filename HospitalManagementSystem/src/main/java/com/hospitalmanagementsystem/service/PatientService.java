@@ -67,7 +67,7 @@ public class PatientService
         }
     }
 
-    public Patient updateParient(Long id, Patient updatePatient){
+    public Patient updatePatient(Long id, Patient updatePatient){
         try{
            Optional<Patient> existingPatient = patientRepository.findById(id);
            if(existingPatient.isPresent())
